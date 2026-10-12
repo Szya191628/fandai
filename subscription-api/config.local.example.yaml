@@ -1,0 +1,29 @@
+config-version: 8
+server:
+    host: "127.0.0.1"
+    port: 8317
+management:
+    allow-remote: false
+    disable-auto-update-panel: true
+    secret-key: "$2a$10$REDACTED"
+access:
+    api-keys:
+        - "cpa_REDACTED"
+requests:
+    proxy-url: "http://127.0.0.1:7990"
+routing:
+    strategy: "round-robin"
+oauth:
+    auth-dir: "F:/账号池/subscription-api/auth"
+    providers:
+        antigravity:
+            antigravity-credits: false
+observability:
+    logs:
+        debug: false
+        logging-to-file: true
+        logs-max-total-size-mb: 50
+        error-logs-max-files: 5
+        request-log: false
+api-keys:
+    openai-compatibility: [{"base-url": "http://127.0.0.1:8318/v1", "keys": [{"api-key": "wb_REDACTED", "proxy-url": "direct"}], "models": [{"alias": "workbuddy", "display-name": "WorkBuddy 当前登录账号", "input-modalities": ["text"], "name": "workbuddy-default", "output-modalities": ["text"]}, {"alias": "workbuddy/hy4-preview", "name": "hy4-preview", "display-name": "Hy4 preview", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/hy3", "name": "hy3", "display-name": "Hy3", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/space-bunny", "name": "space-bunny", "display-name": "Space-Bunny", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/deepseek-v4.1-flash", "name": "deepseek-v4.1-flash", "display-name": "Deepseek-V4.1-Flash", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/glm-5.3", "name": "glm-5.3", "display-name": "GLM-5.3", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/glm-5.3-flash", "name": "glm-5.3-flash", "display-name": "GLM-5.3-Flash", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/glm-5.2", "name": "glm-5.2", "display-name": "GLM-5.2", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/glm-5.1", "name": "glm-5.1", "display-name": "GLM-5.1", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/glm-5v-turbo", "name": "glm-5v-turbo", "display-name": "GLM-5v-Turbo", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/minimax-m3", "name": "minimax-m3", "display-name": "MiniMax-M3", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/kimi-k3-1", "name": "kimi-k3-1", "display-name": "Kimi-K3", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/kimi-k2.8-preview", "name": "kimi-k2.8-preview", "display-name": "Kimi-K2.8-Preview", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/kimi-k2.7", "name": "kimi-k2.7", "display-name": "Kimi-K2.7-Code", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/kimi-k2.6", "name": "kimi-k2.6", "display-name": "Kimi-K2.6", "output-modalities": ["text"], "input-modalities": ["text"]}, {"alias": "workbuddy/deepseek-v4-pro", "name": "deepseek-v4-pro", "display-name": "Deepseek-V4-Pro", "output-modalities": ["text"], "input-modalities": ["text"]}], "name": "WorkBuddy", "request-retry": 0}]

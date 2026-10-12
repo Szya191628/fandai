@@ -1,0 +1,77 @@
+[
+  {
+    "displayName": "Hy4 preview",
+    "id": "hy4-preview",
+    "cliModel": "hy4-preview"
+  },
+  {
+    "displayName": "Hy3",
+    "id": "hy3",
+    "cliModel": "hy3"
+  },
+  {
+    "displayName": "Space-Bunny",
+    "id": "space-bunny",
+    "cliModel": "space-bunny"
+  },
+  {
+    "displayName": "Deepseek-V4.1-Flash",
+    "id": "deepseek-v4.1-flash",
+    "cliModel": "deepseek-v4.1-flash"
+  },
+  {
+    "displayName": "GLM-5.3",
+    "id": "glm-5.3",
+    "cliModel": "glm-5.3"
+  },
+  {
+    "displayName": "GLM-5.3-Flash",
+    "id": "glm-5.3-flash",
+    "cliModel": "glm-5.3-flash"
+  },
+  {
+    "displayName": "GLM-5.2",
+    "id": "glm-5.2",
+    "cliModel": "glm-5.2"
+  },
+  {
+    "displayName": "GLM-5.1",
+    "id": "glm-5.1",
+    "cliModel": "glm-5.1"
+  },
+  {
+    "displayName": "GLM-5v-Turbo",
+    "id": "glm-5v-turbo",
+    "cliModel": "glm-5v-turbo"
+  },
+  {
+    "displayName": "MiniMax-M3",
+    "id": "minimax-m3",
+    "cliModel": "minimax-m3"
+  },
+  {
+    "displayName": "Kimi-K3",
+    "id": "kimi-k3-1",
+    "cliModel": "kimi-k3-1"
+  },
+  {
+    "displayName": "Kimi-K2.8-Preview",
+    "id": "kimi-k2.8-preview",
+    "cliModel": "kimi-k2.8-preview"
+  },
+  {
+    "displayName": "Kimi-K2.7-Code",
+    "id": "kimi-k2.7",
+    "cliModel": "kimi-k2.7"
+  },
+  {
+    "displayName": "Kimi-K2.6",
+    "id": "kimi-k2.6",
+    "cliModel": "kimi-k2.6"
+  },
+  {
+    "displayName": "Deepseek-V4-Pro",
+    "id": "deepseek-v4-pro",
+    "cliModel": "deepseek-v4-pro"
+  }
+]

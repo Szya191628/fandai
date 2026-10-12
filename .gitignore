@@ -1,0 +1,17 @@
+# ===== 凭据与运行时状态（严禁上传）=====
+subscription-api/auth/
+subscription-api/state/
+subscription-api/logs/
+subscription-api/config.yaml
+subscription-api/config.before-*.yaml
+subscription-api/connection.txt
+workbuddy-gateway/state/
+
+# ===== 二进制与依赖 =====
+subscription-api/cli-proxy-api.exe
+node_modules/
+
+# ===== 杂项 =====
+*.log
+*.pid
+*.lock

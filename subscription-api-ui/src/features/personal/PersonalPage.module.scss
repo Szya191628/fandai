@@ -1,0 +1,159 @@
+@use '../../styles/variables' as *;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  min-width: 0;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.heading {
+  min-width: 0;
+
+  h1 {
+    margin: 4px 0 8px;
+    color: var(--text-primary);
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.2;
+  }
+
+  p {
+    max-width: 720px;
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+}
+
+.eyebrow {
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.headerActions,
+.keyActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.summaryGrid,
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.metricValue {
+  color: var(--text-primary);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+
+.emptyHint,
+.cardHint {
+  margin: 8px 0 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.errorText {
+  margin: 8px 0 0;
+  color: var(--error-color);
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.connectionNotice {
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: $radius-md;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.apiBaseRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+}
+
+.apiBaseValue,
+.keyValue {
+  min-width: 0;
+  color: var(--text-primary);
+  font-family: $font-mono;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.keyList {
+  display: flex;
+  flex-direction: column;
+}
+
+.keyRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.keyDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.keyLabel {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .summaryGrid,
+  .actionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .headerActions {
+    width: 100%;
+  }
+
+  .keyRow,
+  .apiBaseRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
